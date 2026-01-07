@@ -16,17 +16,17 @@ async function main(){
             })
         }
         
-        // let role = await db.Roles.findOne({
-        //     where:{
-        //         name : 'admin'
-        //     }
-        // })
-        // let admin = await db.Users.create({
-        //     telegramID:1701682483,
-        //     userName:'ousslr',
-        //     coins:99999
-        // })
-        // await admin.setRole(role)
+        let role = await db.Roles.findOne({
+            where:{
+                name : 'admin'
+            }
+        })
+        let admin = await db.Users.create({
+            telegramID:,
+            userName:,
+            coins:99999
+        })
+        await admin.setRole(role)
         console.log('bot is running...')
     }catch(e){
         console.error(e)
